@@ -10,7 +10,18 @@
     <br>
 
 
-    {{{page_content}}}
+
+ 
+    {{#if published}}
+	    {{{page_content}}}
+    {{/if}}	
+
+
+    <ul>
+    {{#each data_items}}
+    	<li>{{this}}</li>
+    {{/each}}
+    </ul>
 
     </body>
 
